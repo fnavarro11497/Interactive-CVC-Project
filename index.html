@@ -39,19 +39,24 @@
         </div>
         <div id="right-side" class="col">
           <div class="form-container">
-            <div class="card-holder"><p class="card-name">CARDHOLDER NAME</p> <input class="not-cvc" type="text" placeholder="e.g. Jane Appleseed"></div>
-            <div class="card-number"><p class="card-number">CARD NUMBER</p>  <input class="not-cvc" type="text" placeholder="e.g. 1234 5678 9123 0000"></input></div>
-            <div class="card-expiration">
-              <div class="exp-info">
-                <p class="exp-date">EXP. DATE (MM/YY)</p>
-                <div class="mm-yy">
-                  <input class="dates" type="text" maxlength="2" placeholder="MM">
-                  <input class="dates" type="text" maxlength="2" placeholder="YY">
+            <div class="after-click inactive">
+              <img src="images/icon-complete.svg" alt="form-completed">
+              <h1 class="thank-you">THANK YOU!</h1> <h2 class="description">We've added your card details</h2></div>
+            <div class="except-btn ">
+              <div class="card-holder"><p class="card-name">CARDHOLDER NAME</p> <input class="not-cvc" type="text" placeholder="e.g. Jane Appleseed"></div>
+              <div class="card-number"><p class="card-number">CARD NUMBER</p>  <input class="not-cvc" type="text" placeholder="e.g. 1234 5678 9123 0000"></input></div>
+              <div class="card-expiration">
+                <div class="exp-info">
+                  <p class="exp-date">EXP. DATE (MM/YY)</p>
+                  <div class="mm-yy">
+                    <input class="dates" type="text" maxlength="2" placeholder="MM">
+                    <input class="dates" type="text" maxlength="2" placeholder="YY">
+                  </div>
                 </div>
-              </div>
-            
-              <div class="cvc-info">
-                <p class="security-code">CVC. </p><input class="dates" type="text" maxlength="3"  placeholder="e.g. 123">
+              
+                <div class="cvc-info">
+                  <p class="security-code">CVC. </p><input class="dates" type="text" maxlength="3"  placeholder="e.g. 123">
+                </div>
               </div>
             </div>
             <button class="confirm-btn"><p class="confirm">Confirm</p></button>
@@ -63,7 +68,7 @@
 
     <!-- Completed state start -->
 
-    Thank you! We've added your card details Continue
+    
 
     <div class="attribution">
       Challenge by

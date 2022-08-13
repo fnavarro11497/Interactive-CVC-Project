@@ -130,6 +130,18 @@
     color: hsl(278, 68%, 11%);
 }
 
+.except-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2.2rem;
+}
+
+.inactive {
+    display: none !important;
+}
+
 
 .card-name {
     font-size: 0.875rem;
@@ -199,4 +211,25 @@
     font-weight: 500;
     letter-spacing: 2px;
     
+}
+
+.after-click{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.thank-you {
+    letter-spacing: 3px;
+}
+
+h1 {
+    padding-top: 1.8rem;
+}
+
+.description {
+    color: hsl(279, 6%, 55%);
+    font-size: 1.3rem;
+    font-weight: 500;
 }
