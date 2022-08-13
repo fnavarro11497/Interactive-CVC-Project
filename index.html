@@ -22,44 +22,54 @@
   <body>
     
     <div id="main" class="row">
+
       <img class="background-img" src="images/bg-main-desktop.png" alt="">
+
       <div class="container">
+
         <div id="left-side" class="col">
           <div id="credit-card">
             <img class="card-logo" src="images/card-logo.svg" alt="">
             <div class="card-bottom">
-              <p class="numbers"> 0000 0000 0000 0000 </p>
+              <p id="numbers" class="numbers"> 0000 0000 0000 0000 </p>
               <div class="card-footer">
-                  <p class="name">JANE APPLESEED</p>
-                  <p class="expiration">00/00</p>
+                  <p id="name" class="name">JANE APPLESEED</p>
+                  <p id="exp" class="expiration">00/00</p>
               </div>
             </div>
           </div>
-          <div id="card-back"><p class="cvc">000</p></div>
-        </div>
+
+          <div id="card-back">
+            <p id="cvc" class="cvc">000</p></div>
+          </div>
+
         <div id="right-side" class="col">
           <div class="form-container">
-            <div class="after-click inactive">
+
+            <div id="afterClick" class="after-click inactive">
               <img src="images/icon-complete.svg" alt="form-completed">
-              <h1 class="thank-you">THANK YOU!</h1> <h2 class="description">We've added your card details</h2></div>
-            <div class="except-btn ">
-              <div class="card-holder"><p class="card-name">CARDHOLDER NAME</p> <input class="not-cvc" type="text" placeholder="e.g. Jane Appleseed"></div>
-              <div class="card-number"><p class="card-number">CARD NUMBER</p>  <input class="not-cvc" type="text" placeholder="e.g. 1234 5678 9123 0000"></input></div>
+              <h1 class="thank-you">THANK YOU!</h1> 
+              <h2 class="description">We've added your card details</h2>
+            </div>
+
+            <div id="exceptBtn" class="except-btn">
+              <div class="card-holder"><p class="card-name">CARDHOLDER NAME</p> <input id="inputName" class="not-cvc" type="text" placeholder="e.g. Jane Appleseed"></div>
+              <div class="card-number"><p class="card-number">CARD NUMBER</p>  <input id="inputNumber" maxlength="16" class="not-cvc" type="text" placeholder="e.g. 1234 5678 9123 0000"></input></div>
               <div class="card-expiration">
                 <div class="exp-info">
                   <p class="exp-date">EXP. DATE (MM/YY)</p>
                   <div class="mm-yy">
-                    <input class="dates" type="text" maxlength="2" placeholder="MM">
-                    <input class="dates" type="text" maxlength="2" placeholder="YY">
+                    <input id="MM" class="dates" type="text" maxlength="2" placeholder="MM">
+                    <input id="YY" class="dates" type="text" maxlength="2" placeholder="YY">
                   </div>
                 </div>
               
                 <div class="cvc-info">
-                  <p class="security-code">CVC. </p><input class="dates" type="text" maxlength="3"  placeholder="e.g. 123">
+                  <p class="security-code">CVC. </p><input id="inputCVC" class="dates" type="text" maxlength="3"  placeholder="e.g. 123">
                 </div>
               </div>
             </div>
-            <button class="confirm-btn"><p class="confirm">Confirm</p></button>
+            <button id="confirmBtn" class="confirm-btn"><p id="confirm" class="confirm">Confirm</p></button>
           </div>
         </div>
       </div>
@@ -76,5 +86,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </body>
+    <script src="script.js"></script>
+    </body>
 </html>
